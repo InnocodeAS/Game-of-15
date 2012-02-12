@@ -1,0 +1,77 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
+
+ins { text-decoration: none; }
+
+del { text-decoration: line-through; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+.group:before, .group:after { content: ""; display: table; }
+
+.group:after { clear: both; }
+
+.group { zoom: 1; /* For IE 6/7 (trigger hasLayout) */ }
+
+@media screen { .wrapper:before { content: "Normal"; } }
+@media screen and (orientation:landscape) { .wrapper:before { content: "Normal Landscape"; } }
+@media screen and (orientation:portrait) { .wrapper:before { content: "Normal Portrait"; } }
+@font-face { font-family: "PT Mono"; src: url("fonts/PTM55F_W.eot");
+  /* IE */
+  src: url("fonts/PTM55F_W.ttf") format("truetype");
+  /* non-IE */ }
+
+.f-left { float: left; }
+
+.f-right { float: right; }
+
+.f-none { float: none; }
+
+.f-clear { clear: both; }
+
+.nice { -moz-transition-property: all; -moz-transition-duration: 0.1s; -webkit-transition-property: all; -webkit-transition-duration: 0.1s; -ms-transition-property: all; -ms-transition-duration: 0.1s; -o-transition-property: all; -o-transition-duration: 0.1s; }
+
+html, body { height: 100%; width: 100%; }
+
+body { height: 100%; width: 100%; background: #fff; background: url("images/bg.png") repeat; color: #91a4b2; font: 16px "PT Mono", Cambria, Georgia, serif; }
+
+.wrapper { position: absolute; top: 5%; bottom: 5%; left: 20%; width: 60%; font-size: 1em; overflow: hidden; float: none; clear: both; }
+.wrapper:before { content: "Normal"; position: absolute; top: 0; left: 0; z-index: 1000; color: #91a4b2; }
+
+aside { width: 35%; height: 100%; padding: 0; margin: 0; font-size: 1em; text-align: center; }
+aside header { font-size: 1.1em; height: 30%; }
+aside strong { text-decoration: underline; font-weight: normal; }
+aside #score { display: block; font-size: 4em; color: #A6C5CE; background: -webkit-gradient(linear, left top, left bottom, from(#a6c5ce), to(#dae9f1)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+aside nav { width: 100%; height: 70%; }
+aside nav input { display: none; }
+aside nav ul { height: 100%; width: 100%; }
+aside nav ul li { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); height: 20%; line-height: 20%; margin: 0; margin-bottom: -40px; padding-top: 40px; cursor: pointer; position: relative; }
+aside nav ul li:hover { color: #A6C5CE; }
+aside nav ul li:before { content: ""; height: 35px; left: 50%; margin-left: -17px; position: absolute; top: 0; width: 35px; background-image: url("images/menu-hor.png"); background-repeat: no-repeat; background-color: transparent; }
+aside nav ul #refreshPuzzle:before { background-position: 0 0; }
+aside nav ul #refreshPuzzle:before:hover { background-position: 0 -35px; }
+aside nav ul #showImage:before { background-position: 0 -70px; }
+aside nav ul #showImage:before:hover { background-position: 0 -105px; }
+aside nav ul #loadImage:before { background-position: 0 -140px; }
+aside nav ul #loadImage:before:hover { background-position: 0 -175px; }
+aside nav ul #settings:before { background-position: 0 -210px; }
+aside nav ul #settings:before:hover { background-position: 0 -245px; }
+aside nav ul #shareResults:before { background-position: 0 -280px; }
+aside nav ul #shareResults:before:hover { background-position: 0 -315px; }
+
+#puzzle-wrapper { position: relative; width: 60%; height: 100%; padding: 0; margin: 0; text-align: center; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+#puzzle { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; height: 100%; padding: 0; position: relative; border: 5px solid transparent; background: #e9e9e9; /* Old browsers */ background: -moz-linear-gradient(-45deg, #e9e9e9 0%, white 30%, white 70%, #e9e9e9 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #e9e9e9), color-stop(30%, white), color-stop(70%, white), color-stop(100%, #e9e9e9)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(-45deg, #e9e9e9 0%, white 30%, white 70%, #e9e9e9 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(-45deg, #e9e9e9 0%, white 30%, white 70%, #e9e9e9 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(-45deg, #e9e9e9 0%, white 30%, white 70%, #e9e9e9 100%); /* IE10+ */ background: linear-gradient(-45deg, #e9e9e9 0%, white 30%, white 70%, #e9e9e9 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#e9e9e9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ -moz-background-origin: border; -webkit-background-origin: border; background-origin: border-box; box-shadow: inset 100em 0 0 #fff; -moz-box-shadow: inset 100em 0 0 #fff; -webkit-box-shadow: inset 100em 0 0 #fff; z-index: 2; /*&:before { background-image: url("images/default.png"); background-repeat: no-repeat; opacity: 1; background-size: contain; content: ""; position: absolute; right:0; top: 0; width:100%; height:100%; z-index: 1;
+}*/ }
+#puzzle span { display: block; position: absolute; top: 2px; right: 1px; bottom: 1px; left: 2px; background-color: white; }
+
+#puzzle > div { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline: 2px solid white; outline-offset: -2px; width: 25%; height: 25%; cursor: pointer; float: left; position: absolute; background-size: auto; background-position: 0 0; background-color: transparent; background-repeat: no-repeat; background-attachment: scroll; background-clip: border-box; background-origin: padding-box; -webkit-box-shadow: #424040 0 0 15px 1px inset; -moz-box-shadow: #424040 0 0 15px 1px inset; -o-box-shadow: #424040 0 0 15px 1px inset; box-shadow: #424040 0 0 15px 1px inset; }
+
+#puzzle > div:nth-child(4n+5) { clear: both; }

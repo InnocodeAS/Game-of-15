@@ -1,0 +1,16 @@
+@media (max-width: 600px) { .wrapper:before { content: "Mobile"; }
+  .wrapper { font-size: 0.8em; }
+  aside #score { font-size: 3em; line-height: 1em; }
+  aside nav ul li { margin: 0; padding: 0; }
+  aside nav ul li:before { background-image: none; }
+  aside nav ul li:before:hover { background-image: none; } }
+@media screen and (max-width: 600px) and (orientation:landscape) { .wrapper:before { content: "Mobile Landscape"; }
+  aside header { width: 100%; height: 40%; }
+  aside nav { height: 65%; } }
+@media screen and (max-width: 600px) and (orientation:portrait) { .wrapper:before { content: "Mobile Portrait"; }
+  #puzzle-wrapper { width: 100%; height: 60%; }
+  aside { width: 100%; height: auto; padding-top: 10px; }
+  aside header { float: left; width: 30%; }
+  aside nav ul li { padding: 2px; float: left; }
+  aside nav ul li:after { content: "|"; }
+  aside nav ul li:last-child:after { content: ""; } }

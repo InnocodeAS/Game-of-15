@@ -1,0 +1,14 @@
+@media (max-width: 1024px) {
+  .wrapper:before {content: "Tablet"}
+}
+
+@media screen and (max-width: 1024px) and (orientation:landscape) {
+  .wrapper {left:10%; width: 80%;}
+  .wrapper:before {content: "Tablet Landscape"}
+}
+
+@media screen and (max-width: 1024px) and (orientation:portrait) {
+  .wrapper:before {content: "Tablet Portrait"}
+  #puzzle-wrapper {width: 100%;}
+  aside {width:100%;}
+}

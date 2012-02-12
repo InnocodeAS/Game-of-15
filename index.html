@@ -1,10 +1,46 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-    "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html>
 <head>
   <title>Game of 15</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico">
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="description" content="Game of Fifteen - is a sliding puzzle that consists of a frame of numbered square tiles in random order with one tile missing. Have fun! It's a good break!">
+  <meta name="keywords" content="Game of 15, Magic game, 15, Mystic Square, City Media, City Media Labs, Khrystyna Skvarok, Christina Skvarok">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="css/main.css"  media="screen, projection">
+  <link rel="stylesheet" href="css/tablet.css"  media="screen, projection">
+  <link rel="stylesheet" href="css/big-screen.css"  media="screen, projection">
+  <link rel="stylesheet" href="css/mobile.css"  media="screen, projection">
 </head>
 <body>
-  This is a test
+  <div class="wrapper">
+
+    <div id="puzzle-wrapper" class="f-left">
+      <div id="puzzle" class="nice f-right"></div>
+    </div>
+
+    <aside class="f-left">
+      <header class="group">
+        <!--<p>Hello, <strong>User Userovych</strong>,</p>-->
+        Your score: <span id="score">0</span>
+      </header>
+      <nav>
+        <ul>
+          <li id="refreshPuzzle">Refresh</li>
+          <li id="showImage" onclick="void(0);">Show image</li>
+          <li id="loadImage">Load image</li>
+          <li id="settings">Settings</li>
+          <li id="shareResults">Share results</li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+
+  <script type="text/javascript" src="js/Puzzle15.js"></script>
+  <script type="text/javascript" src="js/Observer.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,4 @@
+@media (min-width: 1500px) { .wrapper:before { content: "Big screen"; } }
+@media screen and (min-width: 1500px) and (orientation:landscape) { .wrapper { left: 10%; width: 80%; }
+  .wrapper:before { content: "Big screen Landscape"; } }
+@media screen and (min-width: 1500px) and (orientation:portrait) { .wrapper:before { content: "Big screen Portrait"; } }
